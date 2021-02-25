@@ -6,15 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="scaffolded-by" content="https://github.com/dart-lang/stagehand">
-    <title>liao2000</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>廖柏丞</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
     <script defer src="main.dart.js"></script>
 </head>
 
 <body>
+<div class="tm-page-container mx-auto">
+    <header class="tm-header text-center">
+    <h1 class="tm-title text-uppercase">廖柏丞</h1>
+    </header>
 
-  <div id="output"></div>
+    <section class="tm-section">
+        <nav class="tm-nav">
+            <ul>
+                <li id = "routing-main" class="active">
+                    <a href="#main"><span class="tm-nav-deco"></span>About Me</a>
+                </li>
+                <li id = "routing-projects">
+                    <a href="#projects"><span class="tm-nav-deco"></span>Projects</a>
+                </li>
+                <li id = "routing-resume">
+                    <a href="#resume"><span class="tm-nav-deco"></span>Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="page-main" class="tm-content-container">
+            <p style="color: white;">.</p>
+            <div class="img-container">
+                <img src="img/me.jpg" alt="Image" class="img-round" />
+            </div>
+            <div class="tm-content">
+                <h2 class="tm-page-title">About Me</h2>
+                <p class="mb-4">
+                    廖柏丞 | Bo-cheng Liao | かしわ
+                </p>
+                <p>
 
+                    National Chung Hsing University<br>
+                    Major: Computer Science Engineer (CSE)<br>
+                    Minor: Horticulture (HORT)<br>
+                    Full stack web developer<br>
+                </p>
+                <p class="date">Last modified: Mar 5, 2021</p>
+            </div>
+        </div>
+        <div id="page-projects" class="tm-content-container" style="display: none">
+            <div class="tm-content">
+                <h2 class="tm-page-title">My Projects</h2>
+                <p>
+                    Building...
+                </p>
+                <p class="date">Last modified: Mar 5, 2021</p>
+            </div>
+        </div>
+        <div id="page-resume" class="tm-content-container" style="display: none">
+            <div class="tm-content">
+                <h2 class="tm-page-title">My Résumé</h2>
+                <p>
+                    Building...
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
