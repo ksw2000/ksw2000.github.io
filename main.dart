@@ -6,28 +6,35 @@ var page = {
   'resume': 'Résumé'
 };
 
-void routing(String r){
+void routingPage(String r, {bool push = true}){
   page.forEach((k, v){
     querySelector('#page-$k').style.display = (r != k)? 'none' : 'block';
     querySelector('#routing-$k').className = (r != k)? '' : 'active';
   });
-  window.history.pushState({'title': page[r]}, page[r], '#$r');
+  if(push){
+    window.history.pushState({'title': page[r]}, page[r], '#$r');
+  }else{
+    window.history.replaceState({'title': page[r]}, page[r], '#$r');
+  }
   document.title = '${page[r]} :: Bocheng Liao';
 }
 
-void main() {
+void autoRoute(){
   RegExp exp = RegExp(r"(.*?)#(.*)");
   Match m = exp.firstMatch(window.location.href);
-  routing((m == null) ? 'main' : m[2]);
+  routingPage((m == null) ? 'main' : m[2], push: false);
+}
 
+void main() {
+  autoRoute();
   page.forEach((k,_) {
     querySelector('#routing-$k a').addEventListener('click', (event){
-      routing(k);
+      routingPage(k);
     });
   });
 
   window.addEventListener('popstate', (event){
-
+    autoRoute();
   });
 }
 
