@@ -9,6 +9,7 @@
     <title>廖柏丞</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
     <script defer src="main.dart.js"></script>
@@ -19,27 +20,27 @@
     <header class="tm-header text-center">
     <h1 class="tm-title text-uppercase">廖柏丞</h1>
     </header>
-
     <section class="tm-section">
         <nav class="tm-nav">
             <ul>
-                <li id = "routing-main" class="active">
-                    <a href="#main"><span class="tm-nav-deco"></span>About Me</a>
+                <li id="routing-main">
+                    <a href="#main"><span class="tm-nav-deco"></span>Me</a>
                 </li>
-                <li id = "routing-projects">
+                <li id="routing-projects">
                     <a href="#projects"><span class="tm-nav-deco"></span>Projects</a>
                 </li>
-                <li id = "routing-resume">
-                    <a href="#resume"><span class="tm-nav-deco"></span>Resume</a>
+                <li id="routing-resume">
+                    <a href="#resume"><span class="tm-nav-deco"></span>Résumé</a>
                 </li>
             </ul>
         </nav>
-        <div id="page-main" class="tm-content-container">
-            <p style="color: white;">.</p>
-            <div class="img-container">
-                <img src="img/me.jpg" alt="Image" class="img-round" />
-            </div>
+        <div id="routing-loader" class="loader"></div>
+        <div id="page-main" class="tm-content-container" style="display: none">
             <div class="tm-content">
+                <div style="margin:0px auto 50px;">
+                    <img src="img/me.jpg" alt="profile photo" class="img-round" />
+                </div>
+
                 <h2 class="tm-page-title">About Me</h2>
                 <p class="mb-4">
                     廖柏丞 | Bo-cheng Liao | かしわ
@@ -66,9 +67,64 @@
         <div id="page-resume" class="tm-content-container" style="display: none">
             <div class="tm-content">
                 <h2 class="tm-page-title">My Résumé</h2>
-                <p>
-                    Building...
-                </p>
+                <h5>Education</h5>
+                <ul>
+                    <li><b>National Chung Hsing University</b><br>2018 - present
+                        <ul>
+                            <li>Major in <b>Computer Science and Engineering</b></li>
+                            <li>Minor in <b>Horticulture</b></li>
+                        </ul>
+                    </li>
+                    <li><b>Taipei Municipal Chenggong High School</b><br>2015 - 2018</li>
+                </ul>
+                <h5>Technical skills</h5>
+                <h6><u>Programming language or framework</u></h6>
+                <ul>
+                    <li>C</li>
+                    <li>Go</li>
+                    <li>Java</li>
+                    <li>Python
+                        <ul>
+                            <li>tensorflow</li>
+                            <li>keras</li>
+                        </ul>
+                    </li>
+                    <li>Dart, Flutter</li>
+                    <li>PHP7</li>
+                    <li>SQL
+                        <ul>
+                            <li>phpMyAdmin</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </li>
+                    <li>HTML5, CSS3</li>
+                    <li>Javascript (ES5, ES6)
+                        <ul>
+                            <li>jQuery</li>
+                            <li>Node.js</li>
+                            <li>Electron</li>
+                            <li>Coffee Script</li>
+                        </ul>
+                    </li>
+                    <li>Arduino</li>
+                </ul>
+                <h6><u>Other tools</u></h6>
+                <ul>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Linux (Ubuntu, KDE neon)</li>
+                </ul>
+                <h5>Experience</h5>
+                <ul>
+                    <li>2020/9 ~ present<br><b>Full-stack web develop</b> for <br>Core Materials Inc.<br><a href="https://corematerials.co" target="_blank" class="tm-primary-color">https://corematerials.co</a></li>
+                    <li>2020/8 ~ present<br><b>Full-stack web develop</b> for <br>the forum website of HIM International Music Inc.</li>
+                    <li>2020/7 ~ present<br><b>Full-stack web develop</b> for <br>the Bachelor Program of Electrical Engineering and Computer Science in NCHU
+                        <br><a href="https://bpeecs.nchu.edu.tw" target="_blank" class="tm-primary-color" >https://bpeecs.nchu.edu.tw</a></li>
+                    <li>2020/10 ~ present<br>Cram school <b>math & physics & chemistry teacher</b> (Grade7~Grade12)<br>明光義塾講師 Meikoschool Co., Ltd</li>
+                    <li>2019/7 ~ 2020/1<br>Senior high school <b>math tutor</b> (Grade 10)</li>
+                    <li>2019/7 ~ 2019/8<br>Junior high school <b>math & science tutor</b> (Grade 9)</li>
+                </ul>
+                <p class="date">Last modified: Mar 7, 2021</p>
             </div>
         </div>
     </section>
