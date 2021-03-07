@@ -1176,21 +1176,24 @@ aN:function aN(a,b){this.a=a
 this.b=b},
 a8:function a8(a,b){this.a=a
 this.b=b}},W={c:function c(){},ae:function ae(){},af:function af(){},I:function I(){},aj:function aj(){},al:function al(){},b:function b(){},a:function a(){},Y:function Y(){},ao:function ao(){},aq:function aq(){},av:function av(){},F:function F(){},aE:function aE(){},O:function O(){},a6:function a6(){}},F={
-c1:function(a,b){var t,s,r,q
+c1:function(a,b){var t,s,r,q="#routing-loader",p=document,o=p.querySelector(q).style
+o.display="block"
 $.W.A(0,new F.aZ(a))
-t=$.W
-s=u.X
-if(b){r=window.history
-s=P.b3(["title",t.m(0,a)],s,s)
-t=$.W.m(0,a)
-q="#"+H.e(a)
-r.toString
-r.pushState(new P.a8([],[]).p(s),t,q)}else{r=window.history
-s=P.b3(["title",t.m(0,a)],s,s)
-t=$.W.m(0,a)
-q="#"+H.e(a)
-r.toString
-r.replaceState(new P.a8([],[]).p(s),t,q)}document.title=H.e($.W.m(0,a))+" :: Bocheng Liao"},
+o=p.querySelector(q).style
+o.display="none"
+o=$.W
+t=u.X
+if(b){s=window.history
+t=P.b3(["title",o.m(0,a)],t,t)
+o=$.W.m(0,a)
+r="#"+H.e(a)
+s.toString
+s.pushState(new P.a8([],[]).p(t),o,r)}else{s=window.history
+t=P.b3(["title",o.m(0,a)],t,t)
+o=$.W.m(0,a)
+r="#"+H.e(a)
+s.toString
+s.replaceState(new P.a8([],[]).p(t),o,r)}p.title=H.e($.W.m(0,a))+" :: Bocheng Liao"},
 bS:function(){var t,s=P.cm("(.*?)#(.*)").S(window.location.href)
 if(s==null)t="main"
 else{t=s.b

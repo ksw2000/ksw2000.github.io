@@ -7,10 +7,12 @@ var page = {
 };
 
 void routingPage(String r, {bool push = true}){
+  querySelector('#routing-loader').style.display = 'block';
   page.forEach((k, v){
     querySelector('#page-$k').style.display = (r != k)? 'none' : 'block';
     querySelector('#routing-$k').className = (r != k)? '' : 'active';
   });
+  querySelector('#routing-loader').style.display = 'none';
   if(push){
     window.history.pushState({'title': page[r]}, page[r], '#$r');
   }else{
