@@ -1,6 +1,7 @@
-An absolute bare-bones web app.
+# My Personal Web
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Please visit [https://liao2000.github.io/](https://liao2000.github.io/)
 
-https://dart.dev/tutorials/web/get-started
+Modify from [https://00100000.github.io](https://github.com/00100000/00100000.github.io)
+
+Developed by dart.
