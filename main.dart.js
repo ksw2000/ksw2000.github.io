@@ -1186,12 +1186,12 @@ t=u.X
 if(b){s=window.history
 t=P.b3(["title",o.m(0,a)],t,t)
 o=$.W.m(0,a)
-r="#"+H.e(a)
+r=a==="main"?"":"#"+H.e(a)
 s.toString
 s.pushState(new P.a8([],[]).p(t),o,r)}else{s=window.history
 t=P.b3(["title",o.m(0,a)],t,t)
 o=$.W.m(0,a)
-r="#"+H.e(a)
+r=a==="main"?"":"#"+H.e(a)
 s.toString
 s.replaceState(new P.a8([],[]).p(t),o,r)}p.title=H.e($.W.m(0,a))+" :: Bocheng Liao"},
 bS:function(){var t,s=P.cm("(.*?)#(.*)").S(window.location.href)
