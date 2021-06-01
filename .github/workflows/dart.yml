@@ -24,7 +24,9 @@ jobs:
         with:
           sdk: 2.13.0
       - name: Install dependencies
-        run: dart pub get
+        run: |
+          dart pub get
+          dart pub global activate webdev
 
       - name: Build
         run: webdev build
