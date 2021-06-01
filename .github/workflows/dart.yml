@@ -26,8 +26,17 @@ jobs:
       - name: Install dependencies
         run: dart pub get
 
-      - name: Install peanut
-        run: pub global activate peanut
-      
       - name: Build
-        run: peanut
+        run: webdev build
+        
+      - name: Deploy
+        run: |
+          cd build
+          git init
+          git config user.name  "CI"
+          git config user.email "dart-ci@github.com"
+          git remote add secure-origin https://${{ secrets.DART_CI }}@github.com/liao2000/liao2000.github.io
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Updated docs"
+          git push --force secure-origin gh-pages
