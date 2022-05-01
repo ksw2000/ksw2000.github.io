@@ -5,7 +5,8 @@ var page = {
   'main': 'About me',
   'projects': 'Projects',
   'notebooks': 'Notebooks',
-  'resume': 'Résumé'
+  'resume': 'Résumé',
+  'links': 'Links',
 };
 
 void routingPage(String r, {bool push = true}) {
