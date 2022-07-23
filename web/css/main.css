@@ -255,3 +255,7 @@ img.shadow {
 img.corner{
     border-radius: 8px;
 }
+
+ul.spread li{
+    margin: 10px 0px;
+}
