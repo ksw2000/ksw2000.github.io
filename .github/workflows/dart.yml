@@ -28,12 +28,11 @@ jobs:
           dart pub get
           dart pub global activate webdev
 
-      - name: Build
-        run: webdev build
+      # - name: Build
+      #   run: webdev build
         
       - name: Deploy
         run: |
-          cd build
           git init
           git config user.name  "CI"
           git config user.email "dart-ci@github.com"
