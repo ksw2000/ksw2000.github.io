@@ -66,11 +66,29 @@ function main() {
     autoRoute();
   });
   
-  document.querySelectorAll('img[data-repo]').forEach((dom) => {
-    const rng = Math.floor(Math.random() * 100000);
+  document.querySelectorAll('img[data-repo]').forEach(async (dom) => {
+    let rng = Math.floor(Math.random() * 100000);
     const repo = dom.getAttribute('data-repo');
-    const url = `https://opengraph.githubassets.com/${rng}/${repo}`;
-    dom.setAttribute('src', url);
+    let ok = false;
+    const maxTry = 10;
+    for(let i = 0; i < maxTry && !ok; i++){
+      let url = `https://opengraph.githubassets.com/${rng}/${repo}`;
+      try{
+        let res = await fetch(url);
+        if(res.ok) {
+          dom.setAttribute('src', url);
+          ok = true;
+        }else{
+          ok = false;
+        }
+      }catch{
+        console.log(`fetch again ${i}`);
+        ok = false;
+      }
+    }
+    if(!ok) {
+      dom.remove();
+    }
   });
 }
 
