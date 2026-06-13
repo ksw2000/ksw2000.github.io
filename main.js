@@ -2,7 +2,6 @@ const page = {
   'main': 'About me',
   'projects': 'Projects',
   'resume': 'Résumé',
-  'links': 'Links',
 };
 
 function routingPage(r, push) {
