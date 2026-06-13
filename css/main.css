@@ -9,7 +9,7 @@
 body {
     background-color: #eeeeee;
     color: var(--gray);
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Noto Sans TC', "Open Sans", Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     padding: 0px;
@@ -172,7 +172,7 @@ img-400 {
         max-width: 630px;
     }
 
-    body {
+    html {
         font-size: 15px;
     }
 }
@@ -196,6 +196,15 @@ img-400 {
 
     nav li {
         margin: 5px 0px;
+        padding: 0px 0px 3px;
+    }
+
+    nav li.active {
+        border-bottom: 2px solid var(--teal);
+    }
+    
+    nav a, nav a:visited {
+        font-size: 1.1rem;
     }
 }
 
@@ -205,8 +214,8 @@ img-400 {
         padding: 20px;
     }
 
-    body {
-        font-size: 14px;
+    html {
+        font-size: 13px;
     }
 }
 
